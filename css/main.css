@@ -9,8 +9,10 @@ height: 100%;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.wraper{
-
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
 }
 .conteiner{
     max-width: 1180px;
@@ -132,7 +134,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .specialize_container p{
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-top: 20px;
 }
 
@@ -179,8 +181,129 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .icon_card{
     position: absolute;
     margin: 35px;
-    margin-left: 60px;
+    margin-left: 65px;
     
+}
+
+.products{
+    padding: 60px 0;
+}
+.prod h2{
+    margin-bottom: 55px;
+    font-size: 40px;
+    text-align: center;
+}
+.prod_card{
+    max-width: 300px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+    transition: 0.8s;
+
+}
+.prod_card img{
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+
+}
+.prod_card:hover{
+    box-shadow: 0 0 25px rgba(209, 112, 0, 0.904);
+    transition: 0.8s;
+}
+.card_conteiner{
+    padding: 15px;
+
+}
+.card_conteiner h2{
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.card_conteiner p{
+    text-align: center;
+}
+.card_info{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+.card_info .money{
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E57222;
+    transition: 0.2s;
+}
+.money:hover{
+    color: #fff;
+    transition: 0.2s;
+    cursor:pointer
+}
+
+.products_cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px ;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+.services_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px ;
+    padding-top: 20px;
+    justify-content: center;
+}
+.services_card{
+    text-align: center;
+    position: relative;
+}
+.top_serv_card{
+    position: relative;
+    left: 28%;
+    border: 5px solid #E57222;
+    border-radius: 100%;
+    margin: 20px;
+    padding: 20px;
+    max-width: 120px
+    
+}
+.line{
+    width: 150px;
+    height: 3px;
+    background: #E57222;
+    position: relative;
+    left: 43%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bottom_serv_card{
+    position: relative;
+  
+}
+.main_services h1{
+    font-size: 40px;
+    text-align: center;
+}
+.bottom_serv_card h4{
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.bottom_serv_card p{
+    padding-bottom: 15px;
+}
+
+
+.serv_p{
+    text-align: center;
+    color: #575655;
 }
 
 
@@ -303,7 +426,66 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }*/
 
 
+@media (max-width:1400px) {
+    .products_cards{
+        grid-template-columns: repeat(3, 1fr); 
+    }
 
+}
+
+@media (max-width:1300px){
+    .specialize_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_container{
+        width: 85%;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+    .top_slide{
+        padding: 150px 0px 0px 0px ;
+        background-image: url(img/promo2.jpg);
+        padding-bottom: 260px;
+        max-width: 1300px;
+    }
+    .top_slide h2{
+        font-size: 30px;
+    
+    }
+    .top_slide p{
+        font-size: 15px;
+    }
+
+}
+@media (max-width:600px) {
+    .top_slide{
+     
+        background-image: url(img/promo3.jpg);
+       
+    }
+}
+
+@media (max-width:1130px){
+    .products_cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        padding-top: 20px;
+        justify-items: center;
+    }
+    .services_cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top_serv_card{
+        left: 43%;
+    }
+
+}
+    
 
 @media (max-width:900px){
     .header_body{
@@ -395,7 +577,26 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     .content{
         padding: 70px 0px 0px 0px;
     }
+    .top_serv_card{
+        left: 41%;
+    }
 
+   
+} 
+@media (max-width:540px) {
+        .top_serv_card{
+            left: 35%;
+        }
+        .line{
+            left: 37%;
+        }
+    }
+@media (max-width:390px ) {
+        .top_serv_card{
+            left: 30%;
+        }
+        .line{
+            left: 30%;
+        }
+    }
 
-
-}
