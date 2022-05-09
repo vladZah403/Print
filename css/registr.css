@@ -1,0 +1,152 @@
+.message{
+    margin-left: 5px;  
+    color: rgb(226, 50, 50);
+    font-size: 14px;
+    
+   }
+   
+   .registrWraper{
+       margin: 0 auto;
+       max-width: 400px;
+       padding-top: 130px;
+       padding-bottom: 70px;
+   }
+   .menuReg{
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       align-content: center;
+       list-style-type: none;
+       margin-top: 20px;
+       background-color: #E57222; 
+       border-top-left-radius: 10px ; 
+       border-top-right-radius : 10px ;
+       justify-content: space-around;
+       padding: 15px;
+   }
+   
+   .registration{
+       display: flex;
+       justify-content:center;
+       list-style-type: none;
+       background-color: #E57222;
+       min-height: 300px;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius:10px ;
+       margin-bottom: 25px;
+       
+   }
+   
+   .loginForm, .RegistrForm{
+       margin: 10px;
+   }
+   
+   .impUser input, .impPas input, .UserReg input, .impMail input {
+       border: none;
+       border-radius: 6px;
+       font-size: 15px;
+       margin: 5px;
+       border-top: 20px;
+       width: 250px;
+       height: 50px;
+       padding-left: 5px;
+   
+   }
+   .submitSign, .submitReg{
+       border-radius: 6px;
+       border: none;
+       margin: 5px;
+       width: 255px;
+       height: 30px;
+       font-size: 15px;
+       background-color: #E57222;
+       color: #fff;
+       transition: 0.5s;
+       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+   
+   }
+   .submitReg:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.575);
+        transition: 0.5s;
+        cursor:pointer ;
+   }
+   .submitSign:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+    cursor:pointer ;
+}
+
+
+   .login, .Registr {
+       text-decoration: none;
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+       transition: 0.4s;
+       cursor:pointer ;
+       
+   }
+   .login:hover, .Registr:hover{
+       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.568);
+       transition: 0.4s;
+       cursor:pointer ;
+   }
+   .login a, .Registr a{
+       text-decoration: none;  
+       color: #fff;
+   }
+   .personalArea{
+       display: flex;
+       border: 1px solid black;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+   }
+   .personalArea{
+       border-radius: 5px;
+       margin: 25px;
+       padding: 15px;
+   }
+   .personalArea p {
+       margin: 15px;
+   }
+   .personalWraper{
+       margin: 0 auto;
+       max-width: 600px;
+       padding-top: 120px;
+       padding-bottom: 100px;
+       
+   }
+   .personalWraperMassege{
+      
+       margin: 0 auto;
+       max-width: 500px;
+   }
+
+   .Exit{
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #E57222;
+    font-size: 20px;
+    transition: 1s;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+    
+}
+.Exit:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.705);
+}
+
+.userBox i{
+    background-color: #E57222;
+    
+}
+
+
+@media (max-width: 400px) {
+    .personalArea p{
+        font-size: 12px;
+    }
+}

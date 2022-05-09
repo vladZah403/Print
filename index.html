@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/registr.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>Document</title>
 </head>
@@ -13,7 +15,7 @@
         <header class="header">
             <div class="conteiner">
                 <div class="header_body">
-                    <a href="#" class="header_logo">
+                    <a href="#" class="header_logo logo">
                         <img src="css/img/logo2.png" alt=""  >
                     </a>
                     <div class="header_burger">
@@ -25,7 +27,7 @@
                            <li><a href="#" class="header_link">О нас</a></li>
                            <li><a href="#" class="header_link">Новости</a></li>
                            <li><a href="#" class="header_link">Контакты</a></li>
-                           <li><a href="#" class="header_link"> <i class="fas fa-sign-in-alt"></i> Войти</a>  </li>
+                           <li><a href="#" class="header_link registr"> <i class="fas fa-sign-in-alt"></i> Войти</a>  </li>
                         </ul>
                     </nav>
                 </div>
@@ -33,7 +35,64 @@
             </div>
         </header> 
     </div>
-        <main>
+
+    <main id="mainRegistr" style="display: none;">
+        <div class="registrWraper">
+            <div class=menuReg>
+
+                <li class="login" id="login"><a href="#"> login</a> </li>
+                <li class="Registr" id="Registr"><a href="#"> Registration </a> </li>
+
+            </div>
+
+
+            <div class="registration">
+
+                <div class='loginForm' id="log" style="display: none;">
+                    <ui>
+                        <li class="impUser"><input class=" Us_Log" data-validate-length-range="6" name="name"
+                                placeholder="Username" type="text"></li>
+                        <li class="impPas"><input class=" Pas_Log  viseblPas2" data-validate-length-range="6"
+                                name="password" placeholder="Password" type="password"></li>
+                        <li><button class="submitSign">Sign in</button></li>
+                    </ui>
+                </div>
+
+                <div class='RegistrForm' id="reg">
+                    <ui>
+                        <li class="UserReg"><input class=" Us_Reg" data-validate-length-range="6" name="name"
+                                placeholder="Username" type="text"></li>
+                        <li class="impPas"> <input class=' Pas viseblPas' data-validate-length-range="6" name="password"
+                                placeholder="Password" type="password"> </li>
+                        <li class="impMail"> <input class="UserMail" name="email" placeholder="E-mail" type="email">
+                        </li>
+                        <li><button class="submitReg">Registr</button></li>
+
+                    </ui>
+                    <span class='message'> </span>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <main id="mainPersonal" style="display: none;">
+        <div class="personalWraper">
+            <div class="personalArea">
+                <p> <i class="far fa-user fa-2x" id="user" name="name"> </i> </p>
+                <p><i class="fas fa-key fa-2x" id="key"> </i> </p>
+                <p><i class="fas fa-at fa-2x" id="at"> </i></p>
+                <button class="Exit">Exit</button>
+            </div>
+
+        </div>
+
+
+    </main>
+
+        <main id="main">
             <section class="top_slide">
                 <div class="top_container">
                     <div><h2>ПЕЧАТАЙ ЛЕГКО</h2></div>
@@ -163,11 +222,56 @@
                 </div>
             </section>
 
+
+            <section class="">
+
+            </section>
             
         </main>
 
         
-
+        <footer>
+            <div class="wrapper">
+                
+                <hr class="hr_footer">
+                <div class="footer-links">
+                   
+                    <div class="footer-link">
+                        <p>Phone </p>
+                        <span class="phone"><i class="fas fa-phone"></i> (058)1283-473 </span>
+                        <span class="phone"><i class="fas fa-phone"></i> (035)1643-738</span>
+    
+                    </div>
+                    <div class="footer-link">
+                        <p>social network</p>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"> </i> Instagram</a>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                    <div class="footer-link">
+                        <p>information</p>
+                        <a href="">FAQ</a>
+                        <a href="">Security</a>
+    
+                    </div>
+    
+                </div>
+                <hr class="hr-bottom">
+                <div class="footer-info-block">
+                    <div class="info-footer">
+                        <p>© All rights reserved «Travels» 2021</p>
+                    </div>
+                    <div class="info-card-footer">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </footer>
 
 
 
@@ -239,7 +343,7 @@
     
 
 
-
+    <script src="js/registration.js"></script>
     <script src="js/app.js"></script>
     <script src="js/card-ptint.js"></script>
 </body>
