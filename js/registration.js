@@ -7,6 +7,9 @@ const Main = document.querySelector('#main')
 const mainRegistr = document.querySelector('#mainRegistr')
 const message = document.querySelector('.message')
 
+let contact_bat = document.querySelector(".cont")
+let contact = document.querySelector(".contact")
+
 const at = document.querySelector('#at')
 const key = document.querySelector('#key')
 const user = document.querySelector('#user')
@@ -19,6 +22,8 @@ let textUsername = document.querySelector('#textUsername')
 batRegistr.addEventListener('click', () => {
     Main.style.display = 'none'
     mainRegistr.style.display = ''
+    contact.style.display='none'
+
 })
 
 const carentUser = {
@@ -134,10 +139,19 @@ batRegistr.addEventListener('click', () => {
     }
 })
 
+
+contact_bat.addEventListener('click', ()=>{
+    contact.style.display = ''
+    Main.style.display='none'
+    mainRegistr.style.display = 'none'
+    mainPersonal.style.display = 'none'
+})
+
 logo.addEventListener('click', () => {
     mainPersonal.style.display = 'none'
     Main.style.display = ''
     mainRegistr.style.display = 'none'
+    contact.style.display='none'
 })
 
 Exit.addEventListener('click', () => {

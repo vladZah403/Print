@@ -1,5 +1,7 @@
+
 let burger =  document.querySelector(".header_burger");
 let menu = document.querySelector(".header_menu")
+
 
 burger.addEventListener('click', ()=>{
     if(!burger.classList.contains('active')){
@@ -10,3 +12,5 @@ burger.addEventListener('click', ()=>{
         menu.classList.remove('active');
     }
 })
+
+
