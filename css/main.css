@@ -99,7 +99,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 8px;
 }
 .top_slide h2{
-    background-color: #f19215;
+    background-color: #E57222;
     color: #fff;
     display: inline;
     font-size: 60px;
@@ -606,7 +606,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 @media (max-width:540px) {
         .top_serv_card{
-            left: 35%;
+            left: 30%;
         }
         .line{
             left: 37%;

@@ -1,7 +1,7 @@
 let products_cards = document.querySelector(".products_cards");
 let button_add = document.querySelector(".add_bat")
 
-let name_card = ['Визитки','Листовки','Бирки','Наклейки','Печать на пакетах','Календари','Магниты','Бумажные стаканчики'];
+let name_card = ['Візитки','Листівки','Бірки','Наліпки','Друк на пакетах','Календарі','Магніти','Паперові стаканчики'];
 let img_card = ['css/img/prod_card11.jpg','css/img/prod_card4.jpg','css/img/prod_card15.jpg',
                 'css/img/prod_card16.jpg','css/img/prod_card17.jpg','css/img/prod_card18.jpg',
                 'css/img/prod_card19.jpg','css/img/prod_card20.jpg'];
