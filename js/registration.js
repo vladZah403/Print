@@ -10,6 +10,10 @@ const message = document.querySelector('.message')
 let contact_bat = document.querySelector(".cont")
 let contact = document.querySelector(".contact")
 
+let about_button=document.querySelector('.about_us_button')
+let about = document.querySelector('.about_us')
+
+
 const at = document.querySelector('#at')
 const key = document.querySelector('#key')
 const user = document.querySelector('#user')
@@ -23,6 +27,7 @@ batRegistr.addEventListener('click', () => {
     Main.style.display = 'none'
     mainRegistr.style.display = ''
     contact.style.display='none'
+    about.style.display ='none'
 
 })
 
@@ -96,9 +101,11 @@ submitReg.addEventListener('click', () => {
         Main.style.display = ''
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
+        about.style.display ='none'
+        contact.style.display = 'none'
 
 
-        batRegistr.innerHTML = '<i class="far fa-user fa-lg  icon-user"></i>'
+        batRegistr.innerHTML = '<i class="fa-regular fa-user"></i>'
 
         message.innerHTML = ''
 
@@ -135,6 +142,8 @@ batRegistr.addEventListener('click', () => {
         mainPersonal.style.display = ''
         Main.style.display = 'none'
         mainRegistr.style.display = 'none'
+        about.style.display ='none'
+        contact.style.display = 'none'
 
     }
 })
@@ -143,6 +152,14 @@ batRegistr.addEventListener('click', () => {
 contact_bat.addEventListener('click', ()=>{
     contact.style.display = ''
     Main.style.display='none'
+    about.style.display ='none'
+    mainRegistr.style.display = 'none'
+    mainPersonal.style.display = 'none'
+})
+about_button.addEventListener('click', ()=>{
+    about.style.display =''
+    contact.style.display = 'none'
+    Main.style.display='none'
     mainRegistr.style.display = 'none'
     mainPersonal.style.display = 'none'
 })
@@ -150,6 +167,7 @@ contact_bat.addEventListener('click', ()=>{
 logo.addEventListener('click', () => {
     mainPersonal.style.display = 'none'
     Main.style.display = ''
+    about.style.display ='none'
     mainRegistr.style.display = 'none'
     contact.style.display='none'
 })
@@ -183,10 +201,11 @@ submitSign.addEventListener('click', () => {
         Main.style.display = ''
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
+        about.style.display ='none'
 
 
         
-        batRegistr.innerHTML = '<i class="far fa-user fa-lg  icon-user"></i>'
+        batRegistr.innerHTML = '<i class="fa-regular fa-user"></i>'
 
         batRegistr.classList.remove('registr');
         batRegistr.classList.add('userBox');
@@ -206,9 +225,10 @@ submitSign.addEventListener('click', () => {
         Main.style.display = ''
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
+        about.style.display ='none'
 
 
-        batRegistr.innerHTML = '<i class="far fa-user fa-lg  icon-user"></i>'
+        batRegistr.innerHTML = '<i class="fa-regular fa-user"></i>'
 
         batRegistr.classList.remove('registr');
         batRegistr.classList.add('userBox');
@@ -223,28 +243,7 @@ submitSign.addEventListener('click', () => {
         //textUsername.value = `${UserStopeg.Login}`
 
         //textEmail.value = ` ${UserStopeg.UserEmail} `
-    } if(nameLog === 'admin'&& pasLog === 'admin'){
-        carentUser.Login = "admin";
-        carentUser.UserPassword = "admin";
-
-        Main.style.display = ''
-        mainRegistr.style.display = 'none'
-        mainPersonal.style.display = 'none'
-
-
-        
-        batRegistr.innerHTML = '<i class="far fa-user fa-lg  icon-user"></i>'
-
-        batRegistr.classList.remove('registr');
-        batRegistr.classList.add('userBox');
-
-        console.log(carentUser)
-        user.innerHTML = `admin`
-
-        key.innerHTML = `admin`
-
-        
-    }
+    } 
 
 })
 
