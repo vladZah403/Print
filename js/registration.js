@@ -28,6 +28,9 @@ batRegistr.addEventListener('click', () => {
     mainRegistr.style.display = ''
     contact.style.display='none'
     about.style.display ='none'
+    batRegistr.classList.add('act')
+    contact_bat.classList.remove('act')
+    about_button.classList.remove('act')
 
 })
 
@@ -103,6 +106,9 @@ submitReg.addEventListener('click', () => {
         mainPersonal.style.display = 'none'
         about.style.display ='none'
         contact.style.display = 'none'
+        batRegistr.classList.remove('act')
+        contact_bat.classList.remove('act')
+        about_button.classList.remove('act')
 
 
         batRegistr.innerHTML = '<i class="fa-regular fa-user"></i>'
@@ -113,7 +119,8 @@ submitReg.addEventListener('click', () => {
         batRegistr.classList.add('userBox');
         batRegistr = document.querySelector('.userBox')
 
-        //textUsername.value = `${UserReg}`
+        textUsername.value = `${UserReg}`
+        
         user.innerHTML = ` ${UserReg}`
 
         key.innerHTML = ` ${UserPas}`
@@ -144,6 +151,9 @@ batRegistr.addEventListener('click', () => {
         mainRegistr.style.display = 'none'
         about.style.display ='none'
         contact.style.display = 'none'
+        batRegistr.classList.add('act')
+        contact_bat.classList.remove('act')
+        about_button.classList.remove('act')
 
     }
 })
@@ -151,6 +161,9 @@ batRegistr.addEventListener('click', () => {
 
 contact_bat.addEventListener('click', ()=>{
     contact.style.display = ''
+    contact_bat.classList.add('act')
+    about_button.classList.remove('act')
+    batRegistr.classList.remove('act')
     Main.style.display='none'
     about.style.display ='none'
     mainRegistr.style.display = 'none'
@@ -158,6 +171,9 @@ contact_bat.addEventListener('click', ()=>{
 })
 about_button.addEventListener('click', ()=>{
     about.style.display =''
+    about_button.classList.add('act')
+    contact_bat.classList.remove('act')
+    batRegistr.classList.remove('act')
     contact.style.display = 'none'
     Main.style.display='none'
     mainRegistr.style.display = 'none'
@@ -170,6 +186,9 @@ logo.addEventListener('click', () => {
     about.style.display ='none'
     mainRegistr.style.display = 'none'
     contact.style.display='none'
+    contact_bat.classList.remove('act')
+    about_button.classList.remove('act')
+    batRegistr.classList.remove('act')
 })
 
 Exit.addEventListener('click', () => {
@@ -202,6 +221,9 @@ submitSign.addEventListener('click', () => {
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
         about.style.display ='none'
+        batRegistr.classList.remove('act')
+        contact_bat.classList.remove('act')
+        about_button.classList.remove('act')
 
 
         
@@ -226,6 +248,9 @@ submitSign.addEventListener('click', () => {
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
         about.style.display ='none'
+        batRegistr.classList.remove('act')
+        contact_bat.classList.remove('act')
+        about_button.classList.remove('act')
 
 
         batRegistr.innerHTML = '<i class="fa-regular fa-user"></i>'
@@ -240,9 +265,9 @@ submitSign.addEventListener('click', () => {
 
         at.innerHTML = ` ${UserStopeg.UserEmail}`
 
-        //textUsername.value = `${UserStopeg.Login}`
+        textUsername.value = `${UserStopeg.Login}`
 
-        //textEmail.value = ` ${UserStopeg.UserEmail} `
+        textEmail.value = ` ${UserStopeg.UserEmail} `
     } 
 
 })

@@ -255,6 +255,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-row-gap: 30px ;
     padding-top: 20px;
     justify-content: center;
+    justify-items: center;
 }
 
 
@@ -314,7 +315,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 .top_maneger{
-    padding-top: 120px;
+    padding-top: 20px;
 }
 
 .main_time{
@@ -342,6 +343,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .card_bott{
     padding-top: 30px;
 }
+
+
 .meneger_card{
     margin: 0 20px;
 }
@@ -357,6 +360,12 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
 }
 
+
+
+.act{
+    border: 2px solid #fff;
+    transition: 0.2s;
+}
 
 
 /*.wraper_card{
@@ -490,6 +499,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
 }
+
 
 @media (max-width:1300px){
     .specialize_cards{
@@ -647,12 +657,14 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     .top_serv_card{
         left: 41%;
     }
+    
+} 
+@media (max-width:720px) { 
     .time_card{
         flex-direction: column;
     }
-
-   
-} 
+    
+}
 @media (max-width:540px) {
         .top_serv_card{
            left: 35%;

@@ -16,7 +16,7 @@ for(let i = 0; i<name_card.length; i++){
                 <h2>${name_card[i]}</h2>
                 <p>Текст нужно придумать </p>
                     <div class="card_info">
-                        <div class="money" id="id_card_${i}">₴ ${money_card[i]}</div>
+                        <div class="money myBtn" onclick="modal_click(${i}, '${name_card[i]}' )" id="${i}">₴ ${money_card[i]}</div>
 
                     </div>
             </div>
