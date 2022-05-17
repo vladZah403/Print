@@ -337,12 +337,15 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .time_card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px ;
+   
 
 }
-.card_bott{
-    padding-top: 30px;
-}
+
 
 
 .meneger_card{
@@ -355,6 +358,12 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .position{
     font-size: 16px;
     padding-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.position img{
+    margin-right: 5px;
 }
 .about_position{
     font-size: 14px;
@@ -660,10 +669,13 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 } 
 @media (max-width:720px) { 
-    .time_card{
-        flex-direction: column;
+    .time_card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px ;
     }
-    
 }
 @media (max-width:540px) {
         .top_serv_card{
