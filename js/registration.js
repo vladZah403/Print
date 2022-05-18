@@ -14,6 +14,9 @@ let about_button=document.querySelector('.about_us_button')
 let about = document.querySelector('.about_us')
 
 
+let certif_button = document.querySelector('.certif')
+let certif_info = document.querySelector('.certificate')
+
 const at = document.querySelector('#at')
 const key = document.querySelector('#key')
 const user = document.querySelector('#user')
@@ -28,9 +31,11 @@ batRegistr.addEventListener('click', () => {
     mainRegistr.style.display = ''
     contact.style.display='none'
     about.style.display ='none'
+    certif_info.style.display = 'none'
     batRegistr.classList.add('act')
     contact_bat.classList.remove('act')
     about_button.classList.remove('act')
+    certif_button.classList.remove('act')
 
 })
 
@@ -106,9 +111,11 @@ submitReg.addEventListener('click', () => {
         mainPersonal.style.display = 'none'
         about.style.display ='none'
         contact.style.display = 'none'
+        certif_info.style.display = 'none'
         batRegistr.classList.remove('act')
         contact_bat.classList.remove('act')
         about_button.classList.remove('act')
+        certif_button.classList.remove('act')
 
 
         batRegistr.innerHTML = '<i class="fa-regular fa-user"></i>'
@@ -151,9 +158,12 @@ batRegistr.addEventListener('click', () => {
         mainRegistr.style.display = 'none'
         about.style.display ='none'
         contact.style.display = 'none'
+        certif_info.style.display = 'none'
+
         batRegistr.classList.add('act')
         contact_bat.classList.remove('act')
         about_button.classList.remove('act')
+        certif_button.classList.remove('act')
 
     }
 })
@@ -164,20 +174,41 @@ contact_bat.addEventListener('click', ()=>{
     contact_bat.classList.add('act')
     about_button.classList.remove('act')
     batRegistr.classList.remove('act')
+    certif_button.classList.remove('act')
     Main.style.display='none'
     about.style.display ='none'
     mainRegistr.style.display = 'none'
     mainPersonal.style.display = 'none'
+    certif_info.style.display = 'none'
+
 })
 about_button.addEventListener('click', ()=>{
     about.style.display =''
     about_button.classList.add('act')
     contact_bat.classList.remove('act')
     batRegistr.classList.remove('act')
+    certif_button.classList.remove('act')
+
     contact.style.display = 'none'
     Main.style.display='none'
     mainRegistr.style.display = 'none'
     mainPersonal.style.display = 'none'
+    certif_info.style.display = 'none'
+
+})
+
+certif_button.addEventListener('click', () => {
+    mainPersonal.style.display = 'none'
+    Main.style.display = 'none'
+    about.style.display ='none'
+    mainRegistr.style.display = 'none'
+    contact.style.display='none'
+    certif_info.style.display =''
+    contact_bat.classList.remove('act')
+    about_button.classList.remove('act')
+    batRegistr.classList.remove('act')
+    certif_button.classList.add('act')
+
 })
 
 logo.addEventListener('click', () => {
@@ -186,9 +217,12 @@ logo.addEventListener('click', () => {
     about.style.display ='none'
     mainRegistr.style.display = 'none'
     contact.style.display='none'
+    certif_info.style.display = 'none'
     contact_bat.classList.remove('act')
     about_button.classList.remove('act')
     batRegistr.classList.remove('act')
+    certif_button.classList.remove('act')
+
 })
 
 Exit.addEventListener('click', () => {

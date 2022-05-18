@@ -373,7 +373,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .act{
     border: 2px solid #fff;
-    transition: 0.2s;
+    padding: 5px;
+  
 }
 
 
