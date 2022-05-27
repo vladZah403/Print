@@ -137,6 +137,9 @@
     .modal-content{
         max-width: 80%;
     }
+    .modal{
+        padding-top: 85px;
+    }
 }
 @media (max-width:1570px) {
     .modal-content ul{

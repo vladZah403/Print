@@ -13,6 +13,7 @@ let contact = document.querySelector(".contact")
 let about_button=document.querySelector('.about_us_button')
 let about = document.querySelector('.about_us')
 
+let mainPersonalAdmin = document.querySelector('#mainPersonalAdmin')
 
 let certif_button = document.querySelector('.certif')
 let certif_info = document.querySelector('.certificate')
@@ -21,7 +22,11 @@ const at = document.querySelector('#at')
 const key = document.querySelector('#key')
 const user = document.querySelector('#user')
 
+const keyAdmin = document.querySelector('#keyAdmin')
+const userAdmin = document.querySelector('#userAdmin')
+
 const Exit = document.querySelector(".Exit")
+const ExitAdmin = document.querySelector(".ExitAdmin")
 const textEmail =document.querySelector("#textEmail")
 
 let textUsername = document.querySelector('#textUsername')
@@ -152,18 +157,34 @@ const logo = document.querySelector('.logo')
 
 batRegistr.addEventListener('click', () => {
     if (batRegistr.classList.contains('userBox') !== false) {
+        if(nameLog === 'admin'){
+            mainPersonalAdmin.style.display =''
+            mainPersonal.style.display = 'none'
+            Main.style.display = 'none'
+            mainRegistr.style.display = 'none'
+            about.style.display ='none'
+            contact.style.display = 'none'
+            certif_info.style.display = 'none'
 
-        mainPersonal.style.display = ''
-        Main.style.display = 'none'
-        mainRegistr.style.display = 'none'
-        about.style.display ='none'
-        contact.style.display = 'none'
-        certif_info.style.display = 'none'
+            batRegistr.classList.add('act')
+            contact_bat.classList.remove('act')
+            about_button.classList.remove('act')
+            certif_button.classList.remove('act')
+        } else {
+            mainPersonalAdmin.style.display ='none'
+            mainPersonal.style.display = ''
+            Main.style.display = 'none'
+            mainRegistr.style.display = 'none'
+            about.style.display ='none'
+            contact.style.display = 'none'
+            certif_info.style.display = 'none'
 
-        batRegistr.classList.add('act')
-        contact_bat.classList.remove('act')
-        about_button.classList.remove('act')
-        certif_button.classList.remove('act')
+            batRegistr.classList.add('act')
+            contact_bat.classList.remove('act')
+            about_button.classList.remove('act')
+            certif_button.classList.remove('act') 
+        }
+        
 
     }
 })
@@ -180,6 +201,7 @@ contact_bat.addEventListener('click', ()=>{
     mainRegistr.style.display = 'none'
     mainPersonal.style.display = 'none'
     certif_info.style.display = 'none'
+    mainPersonalAdmin.style.display ='none'
 
 })
 about_button.addEventListener('click', ()=>{
@@ -191,6 +213,7 @@ about_button.addEventListener('click', ()=>{
 
     contact.style.display = 'none'
     Main.style.display='none'
+    mainPersonalAdmin.style.display ='none'
     mainRegistr.style.display = 'none'
     mainPersonal.style.display = 'none'
     certif_info.style.display = 'none'
@@ -199,6 +222,7 @@ about_button.addEventListener('click', ()=>{
 
 certif_button.addEventListener('click', () => {
     mainPersonal.style.display = 'none'
+    mainPersonalAdmin.style.display ='none'
     Main.style.display = 'none'
     about.style.display ='none'
     mainRegistr.style.display = 'none'
@@ -212,6 +236,7 @@ certif_button.addEventListener('click', () => {
 })
 
 logo.addEventListener('click', () => {
+    mainPersonalAdmin.style.display ='none'
     mainPersonal.style.display = 'none'
     Main.style.display = ''
     about.style.display ='none'
@@ -226,6 +251,10 @@ logo.addEventListener('click', () => {
 })
 
 Exit.addEventListener('click', () => {
+    window.location.href = 'index.html';
+})
+
+ExitAdmin.addEventListener('click', () => {
     window.location.href = 'index.html';
 })
 
@@ -252,6 +281,7 @@ submitSign.addEventListener('click', () => {
         carentUser.UserPassword = "admin";
 
         Main.style.display = ''
+        mainPersonalAdmin.style.display ='none'
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
         about.style.display ='none'
@@ -267,9 +297,9 @@ submitSign.addEventListener('click', () => {
         batRegistr.classList.add('userBox');
 
         console.log(carentUser)
-        user.innerHTML = `admin`
+        userAdmin.innerHTML = `admin`
 
-        key.innerHTML = `admin`
+        keyAdmin.innerHTML = `admin`
 
         
     }else if (nameLog === UserStopeg.Login && pasLog === UserStopeg.UserPassword) {
@@ -279,6 +309,7 @@ submitSign.addEventListener('click', () => {
         carentUser.UserEmail = UserStopeg.UserEmail
 
         Main.style.display = ''
+        mainPersonalAdmin.style.display ='none'
         mainRegistr.style.display = 'none'
         mainPersonal.style.display = 'none'
         about.style.display ='none'
@@ -329,3 +360,10 @@ submitSign.addEventListener('click', () => {
 // })
 
 
+for (let i = 0, length = localStorage.length; i < length; i++) {
+    // ключ
+    const key = localStorage.key(i);
+    // значение
+    const value = JSON.parse(localStorage.getItem(nameLog))
+    console.log(`${key}: ${value.Login}`);
+  }

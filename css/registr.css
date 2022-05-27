@@ -10,6 +10,8 @@
        max-width: 400px;
        padding-top: 130px;
        padding-bottom: 70px;
+       padding-left: 20px;
+       padding-right: 20px;
    }
    .menuReg{
        display: flex;
@@ -22,7 +24,7 @@
        border-top-left-radius: 10px ; 
        border-top-right-radius : 10px ;
        justify-content: space-around;
-       padding: 15px;
+       padding: 25px;
    }
    
    .registration{
@@ -34,6 +36,7 @@
        border-bottom-left-radius: 10px;
        border-bottom-right-radius:10px ;
        margin-bottom: 25px;
+       
        
    }
    
@@ -97,7 +100,7 @@
    }
    .personalArea{
        display: flex;
-       border: 1px solid black;
+       border: 2px solid #E57222;
        flex-direction: column;
        justify-content: center;
        align-content: center;
@@ -123,7 +126,7 @@
        max-width: 500px;
    }
 
-   .Exit{
+.Exit {
     margin: auto;
     width: 100px;
     height: 30px;
@@ -135,13 +138,48 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
     
 }
-.Exit:hover{
+.Exit:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.705);
+    cursor: pointer;
 }
+
+.ExitAdmin {
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #E57222;
+    font-size: 20px;
+    transition: 1s;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+    
+}
+.ExitAdmin:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.705);
+    cursor: pointer;
+}
+
 
 .userBox i{
     background-color: #E57222;
     
+}
+.personalArea p{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.personalArea .text_p{
+    font-size: 30px;
+}
+.personalArea span{
+    padding: 15px;
 }
 
 

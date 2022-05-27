@@ -260,23 +260,18 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 .services_cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px ;
-    padding-top: 20px;
+    display: flex;
     justify-content: center;
 }
 .services_card{
     text-align: center;
-    position: relative;
+    padding-top: 25px;
 }
 .top_serv_card{
-    position: relative;
     border: 5px solid #E57222;
     border-radius: 100%;
-    left: 26%;
+
+    margin: 0 auto;
     padding: 20px;
     max-width: 120px
     
@@ -551,6 +546,14 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
+    .services_cards{
+       flex-direction: column;
+    }
+    .bottom_serv_card {
+        padding: 0px 45px 0px 45px;
+        text-align: center;
+    }
+    
     
 }
 
@@ -567,9 +570,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     .services_cards{
         grid-template-columns: repeat(1, 1fr);
     }
-    .top_serv_card{
-        left: 45%;
-    }
+   
 
 }
     
@@ -664,9 +665,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     .content{
         padding: 70px 0px 0px 0px;
     }
-    .top_serv_card{
-        left: 41%;
-    }
+  
     
 } 
 @media (max-width:720px) { 
@@ -679,17 +678,13 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 @media (max-width:540px) {
-        .top_serv_card{
-           left: 35%;
-        }
+      
         .line{
             left: 37%;
         }
     }
 @media (max-width:390px ) {
-        .top_serv_card{
-         left: 30%;
-        }
+       
         .line{
             left: 30%;
         }
